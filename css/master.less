@@ -1,1 +1,24 @@
 @import 'bower_components/bootstrap/less/bootstrap';
+
+section#versus{
+	div.inner{
+		padding: 0 20px;
+		&.versus{
+			border-right: 1px solid #ccc;
+			position: relative;
+			&:after{
+				height: 100px;
+				width: 40px;
+				content: 'VS';
+				position: absolute;
+				right: 0;
+				top: 50%;
+				margin-top: -50px;
+				margin-right: -20px;
+				text-align: center;
+				background: white;
+				line-height: 100px;
+			}
+		}
+	}
+}
